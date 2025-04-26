@@ -1,0 +1,173 @@
+/* Reset Default Browser Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(135deg, #4c6ef5, #15aabf);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    margin-top: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffda77;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Intro Section */
+  .intro, .about-section, .projects-section, .contact-section {
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #4c6ef5;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Buttons */
+  .btn, form button {
+    display: inline-block;
+    background: #4c6ef5;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover, form button:hover {
+    background: #364fc7;
+  }
+  
+  /* About Section */
+  .about-section p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Projects Section */
+  .projects-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .projects-section ul li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #4c6ef5;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Form */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+    }
+  
+    nav a {
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+  
+    main {
+      padding: 30px 10px;
+    }
+  
+    .btn, form button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }  
